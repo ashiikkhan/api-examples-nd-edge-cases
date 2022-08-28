@@ -13,20 +13,23 @@
     />
   </head>
   <body>
-    <header>
+    <header class="text-center">
       <h2>Meal DB</h2>
     </header>
     <main>
-      <section>
+      <section class="text-center">
         <input id="search-field" type="text" />
         <button onclick="searchFood()" class="btn btn-primary">Search</button>
       </section>
       <section>
         <h2>My Meals</h2>
-        <div
-          id="meals-container"
-          class="row row-cols-1 row-cols-md-3 g-4"
-        ></div>
+        <div class="row">
+          <div
+            id="meals-container"
+            class="col-8 row row-cols-1 row-cols-md-3 g-4"
+          ></div>
+          <div class="col-4" id="meal-detail-div"></div>
+        </div>
       </section>
     </main>
 
