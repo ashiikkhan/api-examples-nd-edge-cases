@@ -1,0 +1,10 @@
+.user-div {
+  background-color: gainsboro;
+  text-align: center;
+  padding: 1rem;
+  margin: 1rem auto;
+  max-width: 50%;
+}
+.user-div img {
+  border-radius: 50%;
+}
