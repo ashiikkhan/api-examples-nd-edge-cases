@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countries</title>
+    <style>
+      .main-container {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+      }
+      #countries-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .country {
+        padding: 10px;
+        margin: 20px;
+        background-color: antiquewhite;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2>Explore <span id="count-country"></span> Countries with API</h2>
+    </header>
+    <main>
+      <section class="main-container">
+        <section id="countries-container"></section>
+        <section id="side-bar">
+          <div id="country-detail-div"></div>
+        </section>
+      </section>
+    </main>
+    <script src="country.js"></script>
+  </body>
+</html>
